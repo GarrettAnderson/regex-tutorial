@@ -59,11 +59,17 @@ Quantifiers are <b>greedy</b> by default which mean they will match as many occu
 
 ### OR Operator
 
+
+
 ### Character Classes
 
 ### Flags
 
 ### Grouping and Capturing
+
+To break up sections of the regular expression to check for matching patterns, it is possible to surround what are known as subexpresions with parentheses. Also known as grouping constructs, seperating expressions with parentheses add an extra level of complexity to the regular expression.
+
+Grouping constructs have two primary categories: capturing and non-capturing. Capturing group constructs designate a matching pattern to be re-used while non-capturing do not. To identify a non-capturing group construct, precede a given expression with `?:` inside of the parentheses.
 
 ### Bracket Expressions
 

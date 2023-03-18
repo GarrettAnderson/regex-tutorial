@@ -59,11 +59,36 @@ Quantifiers are <b>greedy</b> by default which mean they will match as many occu
 
 ### OR Operator
 
-
+As a bracket expression represents a pattern to be matched, there are several possiblities of patterns that can be identified. Therefore, it is more specific to use the `OR` operator, `|`, to better specify patterns to be matched. Furthermore, the operator can be used outside of bracket expressions.
 
 ### Character Classes
 
+A character class within a regex can define a set of characters that can be matched.
+
+The following are common character classes:
+
+* `.` Matches any character except the newline character (\n)
+
+* `\d` Matches any Arabic numeral digit. This class is equivalent to the bracket expression [0-9].
+
+* `\w` Matches any alphanumeric character from the basic Latin alphabet, including the underscore `_`. This class is equivalent to the bracket expression [A-Za-z0-9_].
+
+* `\s` Matches a single whitespace character, including tabs and line breaks
+
+Each of the last three character classes can be changed to perform an inverse match by capitalizing the letter character.
+
 ### Flags
+
+The one exception to the rule stating that regular expressions, as a literal, must be wrapped in forward slashes, `/`, are components known as `Flags`. Flags are placed at the end of the regex, after the second forward slash, to define extra specificity or limitation.
+
+There are six optional flags that can be used, either separately or together and in any order, but these are the three you're most likely to encounter:
+
+* `g` Global search: the regex should be tested against all possible matches in a string.
+
+* `i` Case-insensitive search: case should be ignored while attempting a match in a string
+
+* `m` Multi-line search: a multi-line input string should be treated as multiple lines
+
 
 ### Grouping and Capturing
 

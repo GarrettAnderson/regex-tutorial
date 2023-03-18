@@ -75,6 +75,8 @@ Bracket expressions also include special characters to be matched which can incl
 
 ### Greedy and Lazy Match
 
+Greedy matches indicates that a regex will attempt to match as many occurences of a particular pattern as possible. Whereas, lazy matches will attempt to match as few occurences of a particular pattern as possible.
+
 ### Boundaries
 
 ### Back-references
